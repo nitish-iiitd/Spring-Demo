@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Full-Demo",
+		"_postman_id": "0b6841eb-7872-089f-0b5d-ebae65ee2bdb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All books",
+			"request": {
+				"url": "localhost:8080/book",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book",
+			"request": {
+				"url": "localhost:8080/book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Book Two\",\n\t\"author\" : \"Nitish Srivastava\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Books By Author",
+			"request": {
+				"url": "localhost:8080/book/Nitish Srivastava",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"url": "localhost:8080/book/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"url": "localhost:8080/book",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Book Updated 1\",\n\t\"author\" : \"Nitish Srivastava\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
